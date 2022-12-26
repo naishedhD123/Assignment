@@ -1,0 +1,231 @@
+MODULE 1 (HTML)
+
+1. What Are the HTML tags and elements the same thing?
+ans. HTML tags are used to hold the HTML element. HTML element holds the content. 
+
+2. What are tags and attributes in HTML?
+ans. HTML tags are what defines where an HTML element starts and where it ends. There is usually an opening bracket followed by the element’s name and, finally, a closing bracket.
+HTML attribute is what modifies an HTML element. It is usually in the form of unique words that one inserts inside the opening tag. They control the behavior of the element that follows.
+
+3. What are void elements in HTML?
+ans. A void element is an element whose content model never allows it to have contents under any circumstances. 
+
+4. What are HTML Entities?
+ans.An HTML entity is a piece of text ("string") that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+
+5. What are different types of lists in HTML?
+ans. HTML Lists are used to specify lists of information. All lists may contain one or more list elements.
+The class attribute specifies one or more classnames for an element. The class attribute is mostly used to point to a class in a style sheet.
+Difference between id and class attribute: The only difference between them is that “id” is unique in a page and can only apply to at most one element, while “class” selector can apply to multiple elements.
+
+6. What are the various formatting tags in HTML?
+ans. HTML Formatting tags is a process of formatting text for better look and feel.
+
+7. How is Cell Padding different from Cell Spacing?
+ans. Cellpadding basically defines the space present between a table cell's border and the content present in it. Cellspacing basically defines the space present between individual adjacent cells.
+
+8. How can we club two or more rows or columns into a single row or column in an
+HTML table?
+ans. It can be done by using the rowspan and colspan attribute in HTML. The rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to merge column cells in a table.
+
+9. What is the difference between a block-level element and an inline element?
+ans. Block elements always start from a new line. Inline elements never start from a new line. Block elements cover space from left to right as far as it can go. Inline elements only cover the space as bounded by the tags in the HTML element.
+
+10. How to create a Hyperlink in HTML?
+ans. To creat Hyperlink 1.Use the <a> element to define a link 2.use the href attribute to define the link address. now the link is ready.
+
+11. What is the use of an iframe tag?
+ans. The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.
+
+12. What is the use of a span tag? Explain with example?
+ans. The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML span Tag</title>
+   </head>
+
+   <body>
+      <p>This is a paragraph <span style = "color:#FF0000;">
+         This is a paragraph</span>This is a paragraph</p>
+      
+      <p><span style = "color:#8866ff;">
+         This is another paragraph</span></p>
+   </body>
+
+</html>
+
+output: This is a paragraph This is a paragraph This is a paragraph
+
+This is another paragraph
+
+13. How to insert a picture into a background image of a web page?
+ans. The most common & simple way to add background image is using the background image attribute inside the <body> tag.
+
+14. How are active links different from normal links?
+ans. An unvisited link is underlined and blue. A visited link is underlined and purple. An active link is underlined and red.
+
+15. What are the different tags to separate sections of text?
+ans. There are three tags that can be used to separate the texts:
+<br> tag – Usually <br> tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line.
+<p> tag – This contains the text in the form of a new paragraph.
+<blockquote> tag – It is used to define a large quoted section.
+
+16. What is SVG?
+ans. SVG stands for Scalable Vector Graphics · SVG is used to define vector-based graphics for the Web
+
+17. What is difference between HTML and XHTML?
+1. XHTML : 
+XHTML stands for Extensible Hypertext Markup Language. It can be considered as a part of the XML markup language this is because of XHTML have features of both XML and HTML. XHTML is extended from XML and HTML. XHTML can be considered as a better version of HTML. 
+2. HTML : 
+HTML is the Hypertext Markup Language which is the most widely used language over the internet. HTML is used to create web pages and link them from one to another. Please note HTML is not a programming language, it is a markup language. We can use different other technologies as like CSS and javascript to give a new look to the pages developed by HTML. 
+
+18.What are logical and physical tags in HTML?
+ans. Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page.
+
+MODULE 2 (CSS and CSS3)
+
+1. What are the benefits of using CSS? 
+ans. There are a number of benefits of CSS, including:
+1) Faster Page Speed. More code means slower page speed. ...
+2) Better User Experience. CSS not only makes web pages easy on the eye, it also allows for user-friendly formatting. ...
+3) Quicker Development Time. ...
+4) Easy Formatting Changes. ...
+5) Compatibility Across Devices.
+
+2. What are the disadvantages of CSS? 
+ans. 
+i)Confusion due to many CSS levels. Beginners are more vulnerable to this issue. ...
+ii)Cross-Browser Issues. Different browsers work differently. ...
+iii)Security Issues. Security is important in today's world driven by technology and data. ...
+iv)Extra Work for Developers.
+
+3. What is the difference between CSS2 and CSS3?
+ans. The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules. Since each module makes its way through the W3C individually, there’s a wider range of browser support. Make sure you test your CSS3 pages in as many browsers and operating systems as possible to ensure compatibility.
+
+4. Name a few CSS style components 
+ans.
+i)Properties: These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color .
+ii)Values: Each property is assigned a value. This value indicates how to style the property.
+
+5. What do you understand by CSS opacity?
+ans. The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+
+6. How can the background color of an element be changed?
+ans. To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag
+
+7. How can image repetition of the backup be controlled?
+ans. To control the repetition of an image in the background, use the background-repeat property. You can use no-repeat value for the background-repeat property if you do not want to repeat an image, in this case, the image will display only once.
+
+8. What is the use of the background-position property?
+ans. The background-position property sets the starting position of a background image. Tip: By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+
+9. Which property controls the image scroll in the background? 
+ans. The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+
+10. Why should background and color be used as separate properties?
+ans. Why background and color are the separate properties if they should always be set together? There are two reasons behind this: It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.
+
+11. How to center block elements using CSS1? 
+ans. There are two ways of centering block level elements:
+
+i)By setting the properties margin-left and margin-right to auto and width to some explicit value:
+
+BODY {width: 30em; background: cyan;}
+P {width: 22em; margin-left: auto; margin-right: auto}
+
+12. 
+ans. 
+
+13. What are the ways to integrate CSS as a web page?
+ans. CSS can be added to HTML documents in 3 ways:
+Inline - by using the style attribute inside HTML elements.
+Internal - by using a <style> element in the <head> section.
+External - by using a <link> element to link to an external CSS file.
+
+14. What is embedded style sheets? 
+ans. Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the <style></style> tags containing the CSS properties in the head of your document.
+
+15. What are the external style sheets?
+ans. An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. The link to an external style sheet is placed within the head section of the page.
+
+16. What are the advantages and disadvantages of using external style sheets?
+i)one change to the style sheet will change all linked pages.
+ii)you can create classes of styles that can then be used on many different HTML elements.
+iii)consistent look and feel across multiple web pages.
+
+17. What is the meaning of the CSS selector? 
+ans. A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+
+18. What are the media types allowed by CSS? 
+ans.
+i)continuous or paged.
+ii)visual, audio, speech, or tactile.
+iii)grid (for character grid devices), or bitmap.
+iv)interactive (for devices that allow user interaction), or static (for those that do not).
+v)all (includes all media types)
+
+19. What is the rule set?
+ans. Each (valid) declaration block is preceded by one or more comma-separated selectors, which are conditions selecting some elements of the page. A selector group and an associated declarations block, together, are called a ruleset, or often a rule.
+
+20. Create Layouts
+ans. 
+i)Header
+Example
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+ii)Navigation Bar
+Example
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+iii)Content
+Example
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+iv)Footer
+Example
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
