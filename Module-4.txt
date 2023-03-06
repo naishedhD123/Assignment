@@ -1,0 +1,167 @@
+1. What is JavaScript? 
+Ans. JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
+
+2. What is the use of isNaN function? 
+Ans. isNaN() is a function property of the global object. For number values, isNaN() tests if the number is the value NaN . When the argument to the isNaN() function is not of type Number, the value is first coerced to a number, and the resulting value is then compared against NaN .
+
+3. What is negative Infinity? 
+Ans. NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript 
+
+4. Which company developed JavaScript?
+Ans. JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. 
+
+5. What are undeclared and undefined variables?
+Ans. Undeclared variables are those that have not been declared or defined in the current scope, while undefined variables are those that have been declared but not given a value.
+
+6. Write the code for adding new elements dynamically?
+Ans. <h1 style="color:green;">
+    GeeksforGeeks
+</h1>
+  
+<!-- Form to add item -->
+<form action="#">
+  
+    <!-- Type of Element -->
+    <label for="type">
+        Add Element Type
+    </label>
+  
+    <input type="text" id="type" placeholder="Like: div, h1, li...." value="li" />
+    <br /><br />
+  
+    <!-- Text/Value for the element --->
+    <label for="value">
+        Add Element Value
+    </label>
+  
+    <input type="text" id="value" placeholder="Like: Hello GeeksForGeeks" value="CHILD 2" />
+    <br /><br />
+  
+    <!-- Submit the Form -->
+    <button type="button" onClick="addItem()">
+        Add
+    </button>
+</form>
+  
+<!-- Parent tag where we add
+        item as child -->
+<ol id="parent">
+    <li>List Item 1</li>
+</ol>
+  
+<script>
+    // Define the addItem() function
+    // to be called through onclick
+    function addItem() {
+      
+        // Get type of element from form
+        let type = document.
+            getElementById("type").value;
+      
+        // Get the text/value for the tag
+        // from the form
+        let value = document.
+            getElementById("value").value;
+      
+        // createElement() is used for
+        // creating a new element
+        type
+            = document.createElement(type);
+      
+        // Use value as textnode in this example
+        type.appendChild(
+            document.createTextNode(value));
+      
+        // Append as child to the parent
+        // tag i.e. ol
+        document.getElementById(
+            "parent").appendChild(type);
+    }
+</script>
+
+7. What is the difference between ViewState and SessionState?  
+Ans. A ViewState is a state of a page within a browser wherein the values of controls persist when post back operation is done. When another page is loaded, the previous page data is no longer available. - SessionState is the data of a user session and is maintained on the server side.
+
+8. What is === operator? 
+Ans. === (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality. If we compare 2 with “2” using ===, then it will return a false value.
+
+9. How can the style/class of an element be changed?
+Ans. 
+<!DOCTYPE html>
+<html lang="en">
+  
+<body>
+    <h1 style="color: green;">
+        GeeksforGeeks
+    </h1>
+  
+    <h2>
+        How can the style/class of
+        an element be changed?
+    </h2>
+  
+    <b>Validate Pan Number</b>
+  
+    <input type="text" id="pan" />
+    <p></p>
+    <button id="submit">Validate</button>
+  
+    <script>
+        const btn = document.getElementById("submit");
+        btn.addEventListener("click", function () {
+            const pan = document.getElementById("pan").value;
+            const para = document.querySelector("p");
+  
+            let regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+            if (regex.test(pan.toUpperCase())) {
+                para.innerHTML = "Hurrey It's correct";
+  
+                // Inline style
+                para.style.color = "green";
+            } else {
+                para.innerHTML = "OOps It's wrong!";
+  
+                // Inline style
+                para.style.color = "red";
+            }
+        });
+    </script>
+</body>
+  
+</html>
+
+10. How to read and write a file using JavaScript?
+Ans. 
+1> file=fopen(getScriptPath(),0); The function fread() is used for reading the file content.
+2> str = fread(file,flength(file) ; The function fwrite() is used to write the contents to the file.
+3> file = fopen("c:\MyFile.txt", 3);// opens the file for writing.
+
+11. What are all the looping structures in JavaScript? 
+Ans. JavaScript has different kinds of loops:
+for - loops through a block of code a number of times.
+for/in - loops through the properties of an object.
+for/of - loops through the values of an iterable object.
+while - loops through a block of code while a specified condition is true.
+
+12. How can you convert the string of any base to an integer in JavaScript?
+Ans. To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number. If a string with a number is sent, then only that number will be returned as the output.
+
+13. What is the function of the delete operator?
+Ans. The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
+14. What are all the types of Pop up boxes available in JavaScript?
+Ans.JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+15. What is the use of Void (0)? 
+Ans. JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16. How can a page be forced to load another page in JavaScript?
+Ans. In JavaScript, we can use window. location object to force a page to load another page. 
+
+17. What are the disadvantages of using innerHTML in JavaScript?
+Ans. 
+1> Event handlers attached to any DOM element are preserved.
+2> Replacement is done everywhere.
+3> It is not possible to append innerHTML.
+4> Breaks the document.
+5> Used for Cross-site Scripting.
