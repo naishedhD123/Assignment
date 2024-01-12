@@ -1,0 +1,26 @@
+1. What is React Js?
+ans: React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.
+
+2. What is NPM in React Js?
+ans: NPM, the Node package manager is used for managing and sharing the packages for either React or Angular. NPM will be installed along with Nodejs. Node. js can be downloaded and installed from the official NodeJs website.
+
+3. What is Role of Node Js in react Js?
+ans: NodeJS is a framework of JavaScript which is mainly used for working with the backend of our application or building the backend using JavaScript
+
+4. What is CLI command In React Js?
+ans: React has its own command-line interface (CLI) commands. However, these CLI commands are currently only used to create a passable version of a react application using the command line. This will contain a default template as its design, so all the react application created this way will have great consistency as they all have same structure.
+
+5. What is Components in React Js?
+ans: Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components
+
+6. How to install React Js on Windows, Linux Operating System?How to check version of NPM?
+ans: How To Install React on Windows, linux
+Step 1: Install Node. js and npm.
+Step 2: Install Create React App.
+Step 3: Create a New React Project.
+Step 4: Go To the Project Directory and Start the Development Server.
+
+Let's go through a few steps to inspect the installed NPM version using the command-line interface (CLI).
+1>Open your command-line interface (such as Terminal Command Prompt).
+2>Writer the given command and press Enter: npm –version.
+3>The command will display the version number of NPM installed on your system. 
