@@ -8,9 +8,9 @@ Unmounting
 Error Handling
 An analogy of human life can be used to better describe these steps.
 
-Mounting is when the child comes into the world 👶
-Updating is when the child grows 💪
-Unmounting is when the child dies ⚰️
+Mounting is when the child comes into the world 
+Updating is when the child grows 
+Unmounting is when the child dies 
 In the mounting phase, the component is inserted into the DOM along with various react internals.
 
 Once the component is inserted into the DOM it needs to be updated to keep it functional. All these updates happen in the update state.
