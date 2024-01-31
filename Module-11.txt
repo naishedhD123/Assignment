@@ -1,0 +1,61 @@
+1.Explain Life cycle in Class Component and functional component with Hooks
+ans
+1)The lifecycle of a react component can be broken down into four major steps
+
+Mounting
+Updating
+Unmounting
+Error Handling
+An analogy of human life can be used to better describe these steps.
+
+Mounting is when the child comes into the world 👶
+Updating is when the child grows 💪
+Unmounting is when the child dies ⚰️
+In the mounting phase, the component is inserted into the DOM along with various react internals.
+
+Once the component is inserted into the DOM it needs to be updated to keep it functional. All these updates happen in the update state.
+
+In the unmounting phase, which is the final phase, the component is removed from the DOM.
+
+React components can also go through an error-handling phase which occurs when there is some bug.
+
+
+React Component Life cycle
+Lifecycle of a React component:
+Initial Render or Mount
+Update (When the states used in the component or props added to the component is changed)
+Unmount
+Code Available here
+
+We will look into only those lifecycle methods which are used in most of the scenarios. Some of the methods are termed as rarely used in React documentation and advised to use them with caution.
+1. Initial Render or Mount
+
+// Merge of componentDidMount and componentDidUpdate
+useEffect(() => {
+ console.log(“This is mounted or updated.”);
+});
+In this variant of useEffect, the message will be printed when the component is mounted and every time the component state or props is updated.
+
+2. Update
+
+// Equivalent of componentDidMount
+ useEffect(() => {
+   console.log(“This is mounted only not updated.”);
+ }, []);
+In this variant, the message will be printed only once in the component’s life cycle and that is after the component is mounted.
+
+// Merge of componentDidMount and componentDidUpdate but only for given dependency
+ useEffect(() => {
+   console.log(“This is mounted or count state updated.”);
+ }, [count]);
+In this variant, the message will be printed when the component is mounted and every time the count state is changed.
+
+3. Unmount
+
+// Equivalent of componentWillUnmount
+ useEffect(() => {
+   return () => {
+     console.log(“This is unmounted.”);
+   };
+ }, []);
+If we don’t want any side effect to happen on component mounting or updating but only when a component is being unmounted, then we can use this variant.
